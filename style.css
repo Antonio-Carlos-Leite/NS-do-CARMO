@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter&family=Montserrat:wght@800&family=Teko:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .color1 { #cca46c };
+.color2 { #dcc29c };
+.color3 { #844405 }; talvez
+.color4 { #947454 };
+.color5 { #b48c74 }; */
+
+body {
+  background: #bb9469;
+  /* background: #844405; */
+}
+
+html {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1.5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.logo {
+  font-family: Teko;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  color: #fff2e780;
+}
+
+.github {
+  color: #fff2e7;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background: #3e1d0a;
+  /* background: #673e10; */
+}
+
+.imagens {
+  height: 420px;
+}
+
+.imagens img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.history {
+  /* background: #fffcc7; */
+  background: #f7d5b1;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #f169b2;
+  padding: 15px;
+  max-width: 100%;
+  margin: 15px;
+  gap: 20px;
+  column-count: 3;
+  column-gap: 3rem;
+  column-rule: 5px solid rgb(161, 238, 230);
+  font-size: 20px;
+}
+
+.history > h2 {
+  background-color: #3e1d0a;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.history > p {
+  text-align: justify;
+  text-indent: 30px;
+  margin-bottom: 5px;
+}
+
+#img2,
+#img1 {
+  flex: 0 0 100%; /* A imagem ocupará toda a largura de uma coluna */
+  margin-bottom: 20px; /* Adicionar espaçamento abaixo da imagem */
+  width: 100%;
+}
+
+#img2 {
+  margin-top: 20px;
+}
+
+.hero {
+  max-width: 1120px;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: 0 1rem;
+  margin: auto;
+  overflow: clip;
+  color: #ffffff;
+}
+
+.hero-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.destaque {
+  font-family: Epilogue;
+  /* procurar essa fonte */
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.marrom {
+  color: #a45a49;
+}
+
+.amarelo {
+  color: #e7a80e;
+}
+
+h1 {
+  font-family: Montserrat;
+  /* procurar essa fonte */
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+hr {
+  border-color: #a45a49;
+}
+
+.sub-title {
+  color: #c7bab3;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.imagens {
+  max-width: 100%;
+  /* column-count: 3; */
+  /* column-gap: 1rem; */
+  /* margin: -1rem; */
+}
+
+.imagens > figure > img {
+  width: 60%;
+  border-radius: 0.5rem;
+}
+
+/* capelas */
+
+.card-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.capelas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.titulo {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff2e7;
+}
+
+.sub-titulo {
+  color: #c7bab3;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.boxCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2.4rem;
+  gap: 0.8rem;
+}
+
+.card {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, margin 0.3s;
+  background-color: #3e1d0a;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 180px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00fffc;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.content {
+  position: absolute;
+  bottom: 0; /* Posiciona o texto no fundo do cartão */
+  height: 0; /* Inicialmente, a altura é 0 para escondê-lo */
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #3e1d0a7e;
+  transition: visibility 0s, opacity 0.3s, height 0.3s; /* Adiciona a transição de altura */
+  overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse a altura do cartão*/
+}
+
+.content h2,
+.content p,
+.content span {
+  color: #fff;
+  transition: transform 0.3s; /* Adiciona uma transição para suavizar a animação do texto */
+  margin-bottom: 10px; /* Define o espaço entre os elementos */
+  text-align: center;
+  justify-content: center;
+}
+
+.card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  height: 100%; /* Ao passar o mouse, aumenta a altura para revelar o texto */
+}
+
+.card:hover h2,
+p {
+  transform: translateY(
+    0
+  ); /* Ao passar o mouse, move o texto para cima (0 significa nenhuma transformação) */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #0e3bc0;
+    box-shadow: 0 0 0 0 rgb(178, 212, 252, 0.7);
+  }
+  50% {
+    transform: scale(0.9);
+    background-color: #00fffc;
+    box-shadow: 0 0 0 5px rgb(178, 212, 252, 0.325);
+  }
+  100% {
+    transform: scale(0.8);
+    background-color: #0e3bc0;
+    box-shadow: 0 0 0 0 rgb(18, 55, 97);
+  }
+}
+
+footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #3e1d0a;
+  /* background: #23181a; */
+}
+
+.footer-copy {
+  color: #fff2e7;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-autor {
+  color: rgba(255, 242, 231, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+}
